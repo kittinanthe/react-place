@@ -1,23 +1,24 @@
-import logo from './logo.svg';
-import './App.css';
+import "./App.css";
+
+
+import Cardlist from "./component/Cardlist";
+import Filter from "./component/Filter";
+import Header from "./component/Header";
 
 function App() {
+  // const [selected,setSelectedText]= useState(null);
+  // let postpl = null;
+  // if(!!selected){
+  //   postpl = <Cardlist></Cardlist>
+
+  // }
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div>
+      <Header></Header>
+      <Filter></Filter>
+      <div className="app-search">
+      </div>
+      <Cardlist></Cardlist>
     </div>
   );
 }
